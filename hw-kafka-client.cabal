@@ -40,6 +40,7 @@ library
     -Wincomplete-uni-patterns
     -Wredundant-constraints
   extra-libraries: rdkafka
+  ld-options: -lz -- we need this for static linking against zlib.
   build-depends:
       base >=4.6 && <5
     , bifunctors
